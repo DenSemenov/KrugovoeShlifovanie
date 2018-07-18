@@ -1,0 +1,24 @@
+﻿<Window x:Class="KrugovoeShlifovanie.UserPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KrugovoeShlifovanie"
+        mc:Ignorable="d"
+        Title="Окно пользователя" Height="600" Width="700" FontSize="24" Loaded="Window_Loaded" Closing="Window_Closing" WindowStartupLocation="CenterScreen" MinWidth="700" MinHeight="600">
+    <Grid>
+
+        <ScrollViewer HorizontalAlignment="Center" Margin="0,100" Width="600" BorderBrush="#FF009688" BorderThickness="1" Padding="0">
+            <Grid x:Name="mainGrid"/>
+        </ScrollViewer>
+        <Grid HorizontalAlignment="Center" Height="42" Margin="0,50,0,0" VerticalAlignment="Top" Width="600">
+            <Label Content="Дата тестирования" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" Width="300" BorderThickness="1" FontWeight="Thin"/>
+            <Label Content="Оценка" HorizontalAlignment="Left" Margin="300,0,0,0" VerticalAlignment="Top" BorderThickness="1" Width="150" FontWeight="Thin"/>
+            <Label Content="Результат" HorizontalAlignment="Right" Margin="0" VerticalAlignment="Top" BorderThickness="1" Width="149" Height="42" Background="{x:Null}" FontWeight="Thin"/>
+        </Grid>
+        <Grid HorizontalAlignment="Center" Height="45" Margin="0,0,0,50" VerticalAlignment="Bottom" Width="600">
+            <Button x:Name="testButton" Content="Пройти тестирование" HorizontalAlignment="Right" Margin="0" VerticalAlignment="Bottom" FontSize="24" Height="Auto" Width="295" Click="testButton_Click" FontWeight="Thin"/>
+            <Button Content="Вернуться назад" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Bottom" FontSize="24" Height="Auto" Width="295" Background="#FF007C88" BorderBrush="#FF007C88" Click="Button_Click" FontWeight="Thin"/>
+        </Grid>
+    </Grid>
+</Window>

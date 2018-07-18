@@ -1,0 +1,27 @@
+﻿<Window x:Class="KrugovoeShlifovanie.AddStanokForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:KrugovoeShlifovanie"
+        mc:Ignorable="d"
+        Title="Добавить станок внутреннего шлифования" Height="750" Width="750" WindowStartupLocation="CenterScreen" FontSize="24" MinWidth="750" MinHeight="750" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <Grid>
+
+        <Grid>
+            <TextBox x:Name="name" materialDesign:HintAssist.Hint="Наименование станка" HorizontalAlignment="Center" Margin="46,50,46,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" BorderBrush="#FF009688" Grid.ColumnSpan="2" FontWeight="Thin"/>
+            <TextBox x:Name="naibDiam" materialDesign:HintAssist.Hint="Наибольший диаметр шлифуемого отверстия (мм)" HorizontalAlignment="Center" Margin="46,100,46,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" BorderBrush="#FF009688" Grid.ColumnSpan="2" PreviewTextInput="naibDiam_PreviewTextInput" FontWeight="Thin"/>
+            <TextBox x:Name="naibDlina" materialDesign:HintAssist.Hint="Наибольшая длина шлифуемой поверхности (мм)" HorizontalAlignment="Center" Margin="46,150,46,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" BorderBrush="#FF009688" Grid.ColumnSpan="2" PreviewTextInput="naibDlina_PreviewTextInput" FontWeight="Thin"/>
+            <TextBox x:Name="moshnostN" materialDesign:HintAssist.Hint="Мощность двигателя шлифовального шпинделя (кВт)" HorizontalAlignment="Center" Margin="46,200,46,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" BorderBrush="#FF009688" Grid.ColumnSpan="2" PreviewTextInput="moshnostN_PreviewTextInput" FontWeight="Thin"/>
+            <TextBox x:Name="KPD" materialDesign:HintAssist.Hint="КПД станка" HorizontalAlignment="Center" Margin="0,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" BorderBrush="#FF009688" Grid.ColumnSpan="2" PreviewTextInput="KPD_PreviewTextInput" FontWeight="Thin"/>
+            <TextBox x:Name="naibD" materialDesign:HintAssist.Hint="Наибольший диаметр шлифовального круга (мм)" HorizontalAlignment="Center" Margin="0,300,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" BorderBrush="#FF009688" Grid.ColumnSpan="2" PreviewTextInput="naibD_PreviewTextInput" FontWeight="Thin"/>
+            <TextBox x:Name="naibW" materialDesign:HintAssist.Hint="Наибольшая ширина шлифовального круга (мм)" HorizontalAlignment="Center" Margin="0,350,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" BorderBrush="#FF009688" Grid.ColumnSpan="2" PreviewTextInput="naibW_PreviewTextInput" FontWeight="Thin"/>
+            <TextBox x:Name="chastotaZ" materialDesign:HintAssist.Hint="Частота вращения заготовки (об/мин)" HorizontalAlignment="Center" Margin="0,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" BorderBrush="#FF009688" PreviewTextInput="chastotaZ_PreviewTextInput" FontWeight="Thin"/>
+            <TextBox x:Name="chastotaK" materialDesign:HintAssist.Hint="Частота вращения круга (об/мин)" HorizontalAlignment="Center" Margin="0,450,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" BorderBrush="#FF009688" PreviewTextInput="chastotaK_PreviewTextInput" FontWeight="Thin"/>
+            <TextBox x:Name="skorostB" materialDesign:HintAssist.Hint="Скорость продольного хода шлифовальной бабки (м/мин)" HorizontalAlignment="Center" Margin="0,500,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" BorderBrush="#FF009688" PreviewTextInput="skorostB_PreviewTextInput" FontWeight="Thin"/>
+            <TextBox x:Name="poperechPodachi" materialDesign:HintAssist.Hint="Поперечные подачи шлифовального круга (мм/ход)" HorizontalAlignment="Center" Margin="0,550,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" BorderBrush="#FF009688" PreviewTextInput="poperechPodachi_PreviewTextInput" FontWeight="Thin"/>
+            <Button x:Name="OK" Content="Добавить станок" HorizontalAlignment="Center" Margin="0,0,0,50" FontSize="24" Height="40" Width="600" VerticalAlignment="Bottom" Grid.ColumnSpan="2" Click="OK_Click" FontWeight="Thin"/>
+        </Grid>
+    </Grid>
+</Window>

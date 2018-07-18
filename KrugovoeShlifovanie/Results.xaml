@@ -1,0 +1,15 @@
+﻿<Window x:Class="KrugovoeShlifovanie.Results"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KrugovoeShlifovanie"
+        mc:Ignorable="d"
+        Title="Окно результатов тестирования" Height="600" Width="800" MinWidth="600" MinHeight="500" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <ScrollViewer HorizontalAlignment="Center" Margin="0,50,0,100" Width="700" Loaded="ScrollViewer_Loaded">
+            <Grid x:Name="results"/>
+        </ScrollViewer>
+        <Button x:Name="sertf" Content="Сертификат" HorizontalAlignment="Center" Margin="0,0,0,50" VerticalAlignment="Bottom" FontSize="24" Height="Auto" Width="700" Click="sertf_Click"/>
+    </Grid>
+</Window>
